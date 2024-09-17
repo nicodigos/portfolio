@@ -1,17 +1,22 @@
+import "./ImageDescription.css";
+
 type Props = {
-  imageUrl: string;
+  image: string;
   title: string;
   description: string;
+  reversed?: boolean;
 };
 
-function index({ imageUrl, title, description }: Props) {
+function ImageDescription({ image, title, description, reversed }: Props) {
   return (
-    <div>
-      <img src={imageUrl} />
-      <h2>{title}</h2>
-      <p>{description}</p>
-    </div>
+    <section className={`description ${reversed ? "reversed" : ""}`}>
+      <img className="image-svg" src={image} alt="Eye image" />
+      <div className="text-area">
+        <h2>{title}</h2>
+        <p>{description}</p>
+      </div>
+    </section>
   );
 }
 
-export default index;
+export default ImageDescription;

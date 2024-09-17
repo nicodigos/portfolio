@@ -1,6 +1,6 @@
 nav {
   /* border: solid black 2px; */
-  height: 15vh;
+  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -17,7 +17,7 @@ nav.scrolled {
 }
 
 .home-icon {
-  font-size: 40px;
+  font-size: 30px;
   align-items: center;
   color: white;
   transition: color 0.3s ease;
@@ -37,7 +37,7 @@ nav.scrolled .home-icon:hover {
 }
 
 .home {
-  padding-left: 5%;
+  padding-left: 7.5%;
 }
 
 .buttons-header {

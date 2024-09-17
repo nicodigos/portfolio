@@ -6,7 +6,13 @@ type Props = {
 };
 
 function Introduction({ children }: Props) {
-  return <div className="introduction">{children[0]}</div>;
+  return (
+    <div className="introduction">
+      {children[0]}
+      {children[1]}
+      {children[2]}
+    </div>
+  );
 }
 
 export default Introduction;

@@ -12,7 +12,18 @@ function App() {
   let imageDescriptionArray: ReactNode[] = [];
   imageDescriptionArray.push(
     <ImageDescription
-      imageUrl={"./images/eye.svg"}
+      image={"/public/images/eye.svg"}
+      title={"Data Visualization"}
+      description={"This is an awsome description"}
+    ></ImageDescription>,
+    <ImageDescription
+      image={"/public/images/app-store.svg"}
+      title={"Data Visualization"}
+      description={"This is an awsome description"}
+      reversed={true}
+    ></ImageDescription>,
+    <ImageDescription
+      image={"/public/images/pipe.svg"}
       title={"Data Visualization"}
       description={"This is an awsome description"}
     ></ImageDescription>
@@ -42,6 +53,7 @@ function App() {
           <ButtonsList
             labels={["About Me", "Experience", "Education"]}
             style={!scrolled ? "style-one" : "style-three"}
+            hover_style="style-four"
           ></ButtonsList>
         }
         scrolled={scrolled}
