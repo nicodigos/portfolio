@@ -9,9 +9,15 @@ function Banner({ children }: Props) {
   return (
     <>
       <div className="banner inria-sans-regular">
-        <h1>Nicolas Peralta</h1>
-        <p className="inria-sans-light">Data Analyst, Fullstack Developer</p>
-        <div id="button-panel">{children}</div>
+        <div className="banner-center">
+          <div className="content">
+            <h1>Nicolas Peralta</h1>
+            <p className="inria-sans-light">
+              Data Analyst | Fullstack Developer
+            </p>
+            <div id="button-panel">{children}</div>
+          </div>
+        </div>
       </div>
     </>
   );

@@ -1,6 +1,30 @@
 .banner {
   /* border: solid black 2px; */
-  height: 85vh;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  background-image: url("./images/wallpaper.png");
+  background-size: cover;
+}
+
+.banner-center-blur {
+  background-color: rgb(244, 249, 253);
+  filter: blur(1px);
+}
+
+.banner-center {
+  position: relative;
+  overflow: hidden;
+  padding: 50px 100px;
+  background-color: white; /* Inherit background */
+  border-radius: 70px;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -26,10 +50,15 @@
 h1 {
   font-size: 70px;
   padding-bottom: 20px;
+  color: rgba(0, 0, 0, 0.9);
+  letter-spacing: -3px;
+  word-spacing: 5px;
 }
 
 p {
   font-size: 20px;
+  letter-spacing: -0.5px;
+  word-spacing: 0.75px;
 }
 
 .dashboard-buttons {
