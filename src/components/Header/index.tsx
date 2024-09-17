@@ -1,15 +1,18 @@
 import { TiHome } from "react-icons/ti";
 import "./Header.css";
+import { ReactNode } from "react";
 
-const Header = () => {
+type Props = {
+  children: ReactNode;
+};
+
+const Header = ({ children }: Props) => {
   return (
     <nav className="clearfix inria-sans-regular">
-      <TiHome className="home"></TiHome>
-      <ul>
-        <li>About Me</li>
-        <li>Experience</li>
-        <li>Education</li>
-      </ul>
+      <div className="home">
+        <TiHome className="home-icon"></TiHome>
+      </div>
+      <div className="buttons-header">{children}</div>
     </nav>
   );
 };

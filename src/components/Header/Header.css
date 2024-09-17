@@ -6,36 +6,21 @@ nav {
   justify-content: space-between;
 }
 
-nav .home {
-  float: left;
-  font-size: 80px;
+.home-icon {
+  font-size: 50px;
   align-items: center;
-  padding-left: 3%;
   color: black;
+  transition: color 0.3s ease;
 }
 
-ul li {
-  display: inline-block;
-  margin: 10px;
-  padding: 10px 12px;
-  align-items: center;
-  transition: background-color 0.5s ease, color 0.3s ease;
-  border-radius: 15px;
-  color: black;
-  cursor: pointer;
+.home-icon:hover {
+  color: coral;
 }
 
-ul {
+.home {
+  padding-left: 5%;
+}
+
+.buttons-header {
   padding-right: 5%;
-}
-
-.inria-sans-regular {
-  font-family: "Inria Sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-ul li:hover {
-  background-color: coral;
-  color: white;
 }

@@ -1,15 +1,17 @@
+import { ReactNode } from "react";
 import "./Banner.css";
 
-function Banner() {
+type Props = {
+  children: ReactNode;
+};
+
+function Banner({ children }: Props) {
   return (
     <>
       <div className="banner inria-sans-regular">
         <h1>Nicolas Peralta</h1>
         <p className="inria-sans-light">Data Analyst, Fullstack Developer</p>
-        <div className="dashboard-buttons">
-          <button>Power BI</button>
-          <button>D3.js</button>
-        </div>
+        <div id="button-panel">{children}</div>
       </div>
     </>
   );
