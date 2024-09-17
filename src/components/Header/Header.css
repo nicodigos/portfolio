@@ -21,15 +21,19 @@ nav.scrolled {
   align-items: center;
   color: white;
   transition: color 0.3s ease;
+  cursor: pointer;
 }
 
 nav.scrolled .home-icon {
   color: #040424;
 }
 
+nav.scrolled .home-icon:hover {
+  color: #fb9504;
+}
+
 .home-icon:hover {
   color: #fb9504;
-  cursor: pointer;
 }
 
 .home {

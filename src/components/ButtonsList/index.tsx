@@ -1,4 +1,4 @@
-import "./ButtonsList.modules.css";
+import "./ButtonsList.css";
 
 type Props = {
   labels: string[];

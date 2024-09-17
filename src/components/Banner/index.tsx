@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import "./Banner.modules.css";
+import "./Banner.css";
 
 type Props = {
   children: ReactNode;

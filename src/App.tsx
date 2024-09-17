@@ -3,10 +3,20 @@ import Banner from "./components/Banner";
 import ButtonsList from "./components/ButtonsList";
 import Introduction from "./components/Introduction";
 import "./App.css";
-import { useEffect, useState } from "react";
+import { useEffect, useState, ReactNode } from "react";
+import ImageDescription from "./components/ImageDescription";
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
+
+  let imageDescriptionArray: ReactNode[] = [];
+  imageDescriptionArray.push(
+    <ImageDescription
+      imageUrl={"./images/eye.svg"}
+      title={"Data Visualization"}
+      description={"This is an awsome description"}
+    ></ImageDescription>
+  );
 
   useEffect(() => {
     const handleScroll = () => {
@@ -44,7 +54,7 @@ function App() {
           ></ButtonsList>
         }
       ></Banner>
-      <Introduction></Introduction>
+      <Introduction children={imageDescriptionArray}></Introduction>
     </>
   );
 }

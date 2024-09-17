@@ -1,9 +1,12 @@
+import { ReactNode } from "react";
 import "./Introduction.css";
 
-type Props = {};
+type Props = {
+  children: ReactNode[];
+};
 
-function Introduction({}: Props) {
-  return <div className="introduction"></div>;
+function Introduction({ children }: Props) {
+  return <div className="introduction">{children[0]}</div>;
 }
 
 export default Introduction;
