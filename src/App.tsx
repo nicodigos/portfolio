@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import Banner from "./components/Banner";
 import ButtonsList from "./components/ButtonsList";
+import Introduction from "./components/Introduction";
 import "./App.css";
 import { useEffect, useState } from "react";
 
@@ -43,6 +44,7 @@ function App() {
           ></ButtonsList>
         }
       ></Banner>
+      <Introduction></Introduction>
     </>
   );
 }
