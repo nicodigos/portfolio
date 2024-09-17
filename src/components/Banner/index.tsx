@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import "./Banner.css";
+import "./Banner.modules.css";
 
 type Props = {
   children: ReactNode;
@@ -13,7 +13,7 @@ function Banner({ children }: Props) {
           <div className="content">
             <h1>Nicolas Peralta</h1>
             <p className="inria-sans-light">
-              Data Analyst | Fullstack Developer
+              Business Intelligence | Fullstack Developer
             </p>
             <div id="button-panel">{children}</div>
           </div>

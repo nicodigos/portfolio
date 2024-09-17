@@ -8,21 +8,28 @@ nav {
   position: fixed;
   width: 100%;
   transition: background-color 0.5s ease;
+  z-index: 10;
 }
 
 nav.scrolled {
   background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .home-icon {
-  font-size: 50px;
+  font-size: 40px;
   align-items: center;
   color: white;
   transition: color 0.3s ease;
 }
 
+nav.scrolled .home-icon {
+  color: #040424;
+}
+
 .home-icon:hover {
-  color: coral;
+  color: #fb9504;
+  cursor: pointer;
 }
 
 .home {
