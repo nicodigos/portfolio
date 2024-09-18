@@ -6,9 +6,11 @@ function Brand() {
   const brandsListName: string[] = [
     "directv.png",
     "disney.png",
-    "gobierno_colombia.png",
+    "warner.jpg",
     "rappi.png",
     "siigo.png",
+
+    "gobierno_colombia.png",
   ];
 
   const brandsList: ReactNode[] = [];

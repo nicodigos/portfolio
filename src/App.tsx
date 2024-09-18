@@ -1,76 +1,27 @@
-import Header from "./components/Header";
-import Banner from "./components/Banner";
-import ButtonsList from "./components/ButtonsList";
-import Introduction from "./components/Introduction";
-import Brand from "./components/Brand";
-import "./App.css";
-import { useEffect, useState, ReactNode } from "react";
-import ImageDescription from "./components/ImageDescription";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./Home";
+import Me from "./Me";
+import Experience from "./Experience";
+import Education from "./Education";
 
-function App() {
-  let imageDescriptionArray: ReactNode[] = [];
-  imageDescriptionArray.push(
-    <ImageDescription
-      image={"/public/images/eye.svg"}
-      title={"Data Visualization"}
-      description={"This is an awsome description"}
-    ></ImageDescription>,
-    <ImageDescription
-      image={"/public/images/app-store.svg"}
-      title={"Data Visualization"}
-      description={"This is an awsome description"}
-      reversed={true}
-    ></ImageDescription>,
-    <ImageDescription
-      image={"/public/images/pipe.svg"}
-      title={"Data Visualization"}
-      description={"This is an awsome description"}
-    ></ImageDescription>
-  );
-
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      // Change this value to the scroll position where you want the change to happen
-      if (window.scrollY > 100) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    // Cleanup the event listener on component unmount
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+const App = () => {
+  let labels = [
+    ["About Me", "/me"],
+    ["Experience", "/experience"],
+    ["Education", "/education"],
+    ["Power BI", "/bi"],
+    ["D3.js", "/d3js"],
+  ];
   return (
-    <>
-      <Header
-        children={
-          <ButtonsList
-            labels={["About Me", "Experience", "Education"]}
-            style={!scrolled ? "style-one" : "style-three"}
-            hover_style="style-four"
-          ></ButtonsList>
-        }
-        scrolled={scrolled}
-      ></Header>
-      <Banner
-        children={
-          <ButtonsList
-            labels={["Power BI", "D3.js"]}
-            style="style-two"
-          ></ButtonsList>
-        }
-      ></Banner>
-      <Introduction children={imageDescriptionArray}></Introduction>
-      <Brand></Brand>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home links={labels} />} />
+        <Route path="/me" element={<Me links={labels} />} />
+        <Route path="/experience" element={<Experience links={labels} />} />
+        <Route path="/education" element={<Education links={labels} />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
