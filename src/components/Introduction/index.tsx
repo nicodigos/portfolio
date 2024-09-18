@@ -7,7 +7,7 @@ type Props = {
 
 function Introduction({ children }: Props) {
   return (
-    <div className="introduction">
+    <div className="introduction inria-sans-regular">
       {children[0]}
       {children[1]}
       {children[2]}

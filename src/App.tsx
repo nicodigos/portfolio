@@ -2,13 +2,12 @@ import Header from "./components/Header";
 import Banner from "./components/Banner";
 import ButtonsList from "./components/ButtonsList";
 import Introduction from "./components/Introduction";
+import Brand from "./components/Brand";
 import "./App.css";
 import { useEffect, useState, ReactNode } from "react";
 import ImageDescription from "./components/ImageDescription";
 
 function App() {
-  const [scrolled, setScrolled] = useState(false);
-
   let imageDescriptionArray: ReactNode[] = [];
   imageDescriptionArray.push(
     <ImageDescription
@@ -28,6 +27,8 @@ function App() {
       description={"This is an awsome description"}
     ></ImageDescription>
   );
+
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -67,6 +68,7 @@ function App() {
         }
       ></Banner>
       <Introduction children={imageDescriptionArray}></Introduction>
+      <Brand></Brand>
     </>
   );
 }

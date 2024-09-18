@@ -1,0 +1,23 @@
+.brand-section {
+  /* color: #040424; */
+  height: 100vh;
+  color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px 40px;
+  z-index: 100;
+}
+.brand-section-logos {
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.inria-sans-light {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}

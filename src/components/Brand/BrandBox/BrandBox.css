@@ -1,0 +1,10 @@
+.brand-logo {
+  filter: grayscale(100%);
+  width: 150px;
+  margin: 50px;
+  opacity: 0.7;
+}
+
+.transparency {
+  opacity: 0.3;
+}

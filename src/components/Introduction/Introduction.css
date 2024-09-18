@@ -1,5 +1,12 @@
 .introduction {
-  background-color: white;
+  background-color: #ededfa;
   height: 1000px;
-  padding: 50px 200px;
+  padding: 50px 17%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.inria-sans-regular {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
