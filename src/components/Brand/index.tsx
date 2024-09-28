@@ -6,18 +6,17 @@ function Brand() {
   const brandsListName: string[] = [
     "directv.png",
     "disney.png",
+    "gobierno_colombia.png",
     "warner.jpg",
     "rappi.png",
-    "siigo.png",
-
-    "gobierno_colombia.png",
+    // "siigo.png",
   ];
 
   const brandsList: ReactNode[] = [];
   for (let brand of brandsListName) {
     brandsList.push(
       <BrandBox
-        imageUrl={`/public/images/${brand}`}
+        imageUrl={`/images/${brand}`}
         transparency={brand == "disney.png" ? true : false}
       ></BrandBox>
     );

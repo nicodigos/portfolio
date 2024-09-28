@@ -1,0 +1,8 @@
+.section-title {
+  height: 100vh;
+  padding: 100px;
+  width: 100%;
+  background-color: aqua;
+  align-items: center;
+  justify-content: center;
+}
