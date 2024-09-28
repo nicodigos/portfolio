@@ -7,7 +7,7 @@ type Props = {
 function index({ text }: Props) {
   return (
     <div className="section-title">
-      <h1>{text}</h1>
+      <h1 className="inria-sans-bold">{text}</h1>
     </div>
   );
 }
