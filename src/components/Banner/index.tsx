@@ -5,7 +5,7 @@ type Props = {
   children: ReactNode;
 };
 
-function Banner({ children }: Props) {
+function Banner({}: Props) {
   return (
     <>
       <div className="banner inria-sans-regular">
@@ -15,7 +15,7 @@ function Banner({ children }: Props) {
             <p className="inria-sans-light">
               Business Intelligence | Fullstack Developer
             </p>
-            <div id="button-panel">{children}</div>
+            {/* <div id="button-panel">{children}</div> */}
           </div>
         </div>
       </div>

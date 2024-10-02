@@ -12,7 +12,8 @@
 .banner-center {
   position: relative;
   overflow: hidden;
-  padding: 50px 100px;
+  height: 300px;
+  padding: 80px 100px;
   background-color: white; /* Inherit background */
   border-radius: 70px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);

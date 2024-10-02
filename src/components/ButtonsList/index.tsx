@@ -12,8 +12,8 @@ function ButtonsList({ labels, style, hover_style }: Props) {
 
   for (let l of labels) {
     buttons_list.push(
-      <Link to={l[1]}>
-        <li key={`${l}`}>{l[0]}</li>
+      <Link key={`${l}`} to={l[1]}>
+        <li>{l[0]}</li>
       </Link>
     );
   }

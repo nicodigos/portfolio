@@ -21,7 +21,9 @@ function Me({ links }: Props) {
         scrolled={true}
       ></Header>
       <SectionTitle text={"About Me"}></SectionTitle>
-      <SectionContent></SectionContent>
+      <SectionContent
+        contentJsonUrl={"/section-contents/about-me.json"}
+      ></SectionContent>
     </>
   );
 }

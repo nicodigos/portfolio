@@ -16,6 +16,7 @@ function Brand() {
   for (let brand of brandsListName) {
     brandsList.push(
       <BrandBox
+        key={brand}
         imageUrl={`/images/${brand}`}
         transparency={brand == "disney.png" ? true : false}
       ></BrandBox>
