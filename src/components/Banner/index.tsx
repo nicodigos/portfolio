@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactNode, useState, useEffect } from "react";
 import "./Banner.css";
 
 type Props = {
@@ -6,9 +6,33 @@ type Props = {
 };
 
 function Banner({}: Props) {
+  const [windowHeight, setWindowHeight] = useState(window.innerHeight);
+
+  // Función para actualizar el tamaño de la ventana
+  const handleResize = () => {
+    setWindowHeight(window.innerHeight);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <>
-      <div className="banner inria-sans-regular">
+      <div
+        className="banner inria-sans-regular"
+        style={{
+          height: `${
+            windowHeight / window.screen.height > 0.7
+              ? "100vh"
+              : (window.screen.height * 0.8).toString() + "px"
+          }`,
+        }}
+      >
         <div className="banner-center">
           <div className="content">
             <h1>Nicolas Peralta</h1>
