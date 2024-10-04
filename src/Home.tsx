@@ -6,6 +6,7 @@ import Brand from "./components/Brand";
 import "./Home.css";
 import { useEffect, useState, ReactNode } from "react";
 import ImageDescription from "./components/ImageDescription";
+import NameLogo from "./components/Header/NameLogo";
 
 type Props = {
   links: string[][];

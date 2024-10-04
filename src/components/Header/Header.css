@@ -1,6 +1,6 @@
 nav {
   /* border: solid black 2px; */
-  height: 50px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -13,16 +13,16 @@ nav {
 
 nav.scrolled {
   background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); */
 }
 
-.home-icon {
+/* .home-icon {
   font-size: 30px;
   align-items: center;
   color: white;
   transition: color 0.3s ease;
   cursor: pointer;
-}
+} */
 
 nav.scrolled .home-icon {
   color: #040424;
@@ -42,4 +42,15 @@ nav.scrolled .home-icon:hover {
 
 .buttons-header {
   padding-right: 5%;
+}
+
+.protest-strike-regular {
+  font-family: "Protest Strike", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: black;
 }

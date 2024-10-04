@@ -1,7 +1,8 @@
-import { TiHome } from "react-icons/ti";
+// import { TiHome } from "react-icons/ti";
 import "./Header.css";
 import { ReactNode } from "react";
 import { Link } from "react-router-dom";
+import NameLogo from "./NameLogo";
 
 type Props = {
   children: ReactNode;
@@ -14,8 +15,10 @@ const Header = ({ children, scrolled }: Props) => {
       className={`clearfix inria-sans-regular ${scrolled ? "scrolled" : ""}`}
     >
       <div className="home">
-        <Link to="/">
-          <TiHome className="home-icon"></TiHome>
+        <Link className="logo-link" to="/">
+          <NameLogo></NameLogo>
+
+          {/* <TiHome className="home-icon"></TiHome> */}
         </Link>
       </div>
       <div className="buttons-header">{children}</div>

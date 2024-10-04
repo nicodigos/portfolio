@@ -1,0 +1,31 @@
+/* .protest-strike-regular {
+  font-family: "Protest Strike", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inria-sans-light {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+} */
+
+.name-logo {
+  font-size: 30px;
+  letter-spacing: -0.5px;
+  transition: color 0.5s ease;
+}
+
+.name-subtitle {
+  font-size: 15px;
+}
+
+.alata-regular {
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.name-logo:hover {
+  color: #d10100;
+}
