@@ -1,7 +1,7 @@
 .brand-section {
   /* color: #040424; */
   height: 100vh;
-  color: gray;
+  /* color: gray; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,8 +10,9 @@
   z-index: 100;
 }
 .brand-section-logos {
+  width: 900px;
   display: flex;
-  justify-content: center; /* Horizontal centering */
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -20,4 +21,9 @@
   font-family: "Inria Sans", sans-serif;
   font-weight: 300;
   font-style: normal;
+}
+
+.brand-title {
+  margin-bottom: 30px;
+  font-size: 20px;
 }

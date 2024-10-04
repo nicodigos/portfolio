@@ -24,7 +24,7 @@ function Brand() {
     "gobierno_colombia.png",
     "warner.jpg",
     "rappi.png",
-    // "siigo.png",
+    "siigo.png",
   ];
 
   const brandsList: ReactNode[] = [];
