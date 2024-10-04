@@ -43,7 +43,7 @@ function Brand() {
       className="brand-section inria-sans-light"
       style={{
         height: `${
-          windowHeight / window.screen.height > 0.7
+          windowHeight / window.screen.height > 0.8
             ? "100vh"
             : (window.screen.height * 0.8).toString() + "px"
         }`,

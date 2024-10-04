@@ -27,7 +27,7 @@ function Banner({}: Props) {
         className="banner inria-sans-regular"
         style={{
           height: `${
-            windowHeight / window.screen.height > 0.7
+            windowHeight / window.screen.height > 0.8
               ? "100vh"
               : (window.screen.height * 0.8).toString() + "px"
           }`,
