@@ -3,6 +3,7 @@
   padding: 10px 0px;
   /* border: solid 1px black; */
   height: 300px;
+  flex-direction: column;
 }
 
 .reversed {
@@ -10,7 +11,7 @@
 }
 
 .image-svg {
-  width: 300px;
+  width: 200px;
 }
 
 .text-area {

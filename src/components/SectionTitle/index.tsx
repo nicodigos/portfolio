@@ -4,7 +4,7 @@ type Props = {
   text: string;
 };
 
-function index({ text }: Props) {
+function SectionTitle({ text }: Props) {
   return (
     <div className="section-title">
       <h1 className="inria-sans-bold section-title-content">{text}</h1>
@@ -12,4 +12,4 @@ function index({ text }: Props) {
   );
 }
 
-export default index;
+export default SectionTitle;

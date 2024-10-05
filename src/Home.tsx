@@ -6,7 +6,7 @@ import Brand from "./components/Brand";
 import "./Home.css";
 import { useEffect, useState, ReactNode } from "react";
 import ImageDescription from "./components/ImageDescription";
-import NameLogo from "./components/Header/NameLogo";
+import QuoteSection from "./components/QuoteSection";
 
 type Props = {
   links: string[][];
@@ -69,6 +69,7 @@ function Home({ links }: Props) {
           <ButtonsList labels={links.slice(3)} style="style-two"></ButtonsList>
         }
       ></Banner>
+      <QuoteSection></QuoteSection>
       <Introduction children={imageDescriptionArray}></Introduction>
       <Brand></Brand>
     </>

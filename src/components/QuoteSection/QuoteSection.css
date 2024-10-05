@@ -1,0 +1,17 @@
+.quote-section {
+  background-color: black;
+  color: white;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote {
+  font-size: 50px;
+  letter-spacing: 0px;
+}
+
+.heart {
+  color: #fb9504;
+}

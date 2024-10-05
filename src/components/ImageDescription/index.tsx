@@ -7,14 +7,11 @@ type Props = {
   reversed?: boolean;
 };
 
-function ImageDescription({ image, title, description, reversed }: Props) {
+function ImageDescription({ image, title }: Props) {
   return (
-    <section className={`description ${reversed ? "reversed" : ""}`}>
+    <section className={`description`}>
       <img className="image-svg" src={image} alt="Eye image" />
-      <div className="text-area inria-sans-light">
-        <h2>{title}</h2>
-        <p>{description}</p>
-      </div>
+      <h2>{title}</h2>
     </section>
   );
 }

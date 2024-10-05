@@ -8,13 +8,17 @@
   background-size: cover;
 }
 
+em {
+  font-style: normal;
+}
+
 .banner-center {
   position: relative;
   overflow: hidden;
   height: 300px;
-  padding: 80px 100px;
+  /* padding: 80px 100px; */
   background-color: transparent;
-  border-radius: 70px;
+  /* border-radius: 70px; */
 }
 
 .content {
@@ -23,6 +27,17 @@
   justify-content: center;
   flex-direction: column;
   display: flex;
+}
+
+.banner-quote {
+  font-size: 60px;
+  letter-spacing: -2.5px;
+  word-spacing: 0.5px;
+}
+
+.job-titles {
+  margin-top: 30px;
+  font-size: 23px;
 }
 
 #button-panel {

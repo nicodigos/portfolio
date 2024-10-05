@@ -5,7 +5,7 @@ type Props = {
   children: ReactNode;
 };
 
-function Banner({}: Props) {
+function Banner({ children }: Props) {
   const [windowHeight, setWindowHeight] = useState(window.innerHeight);
 
   // Función para actualizar el tamaño de la ventana
@@ -35,11 +35,15 @@ function Banner({}: Props) {
       >
         <div className="banner-center">
           <div className="content">
-            <h1>Nicolas Peralta</h1>
-            <p className="inria-sans-light">
+            <h1 className="banner-quote">
+              There are not impossible destinations,
+            </h1>
+            <h1 className="banner-quote">just untraveled journeys</h1>
+            <p className="inria-sans-light job-titles">
               Business Intelligence | Fullstack Developer
             </p>
-            {/* <div id="button-panel">{children}</div> */}
+
+            <div id="button-panel">{children}</div>
           </div>
         </div>
       </div>

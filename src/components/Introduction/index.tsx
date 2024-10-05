@@ -7,11 +7,11 @@ type Props = {
 
 function Introduction({ children }: Props) {
   return (
-    <div className="introduction inria-sans-regular">
+    <section className="introduction inria-sans-regular">
       {children[0]}
       {children[1]}
       {children[2]}
-    </div>
+    </section>
   );
 }
 
