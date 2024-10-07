@@ -28,7 +28,7 @@ function Home({ links }: Props) {
     ></ImageDescription>,
     <ImageDescription
       image={"/public/images/pipe.svg"}
-      title={"Data Visualization"}
+      title={"Outside the box"}
       description={"This is an awsome description"}
     ></ImageDescription>
   );
