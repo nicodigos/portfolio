@@ -17,26 +17,26 @@ ul li {
 }
 
 .style-one li {
-  color: black;
+  color: var(--text-color);
   background-color: transparent;
 }
 
 .style-two li {
-  color: white;
-  background-color: #040424;
+  color: var(--background-color-white);
+  background-color: var(--text-color);
 }
 
 .style-three li {
-  color: #040424;
+  color: var(--text-color);
   background-color: transparent;
 }
 
 .style-four li:hover {
-  color: #fb9504;
+  color: var(--blues-dark);
   background-color: transparent;
 }
 
 ul li:hover {
-  background-color: #fb9504;
-  color: #040424;
+  background-color: var(--yellow);
+  color: var(--text-color);
 }

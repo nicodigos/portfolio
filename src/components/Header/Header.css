@@ -12,7 +12,7 @@ nav {
 }
 
 nav.scrolled {
-  background-color: white;
+  background-color: var(--background-color-white);
   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); */
 }
 
@@ -24,18 +24,6 @@ nav.scrolled {
   cursor: pointer;
 } */
 
-nav.scrolled .home-icon {
-  color: #040424;
-}
-
-nav.scrolled .home-icon:hover {
-  color: #fb9504;
-}
-
-.home-icon:hover {
-  color: #fb9504;
-}
-
 .home {
   padding-left: 7.5%;
 }
@@ -44,13 +32,7 @@ nav.scrolled .home-icon:hover {
   padding-right: 5%;
 }
 
-.protest-strike-regular {
-  font-family: "Protest Strike", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
 .logo-link {
   text-decoration: none;
-  color: black;
+  color: var(--text-color);
 }

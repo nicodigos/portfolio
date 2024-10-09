@@ -1,6 +1,6 @@
 .quote-section {
-  background-color: black;
-  color: white;
+  background-color: var(--text-color);
+  color: var(--background-color-white);
   height: 100px;
   display: flex;
   justify-content: center;
@@ -13,5 +13,5 @@
 }
 
 .heart {
-  color: #fb9504;
+  color: var(--red);
 }

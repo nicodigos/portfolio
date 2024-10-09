@@ -3,6 +3,7 @@ import Home from "./Home";
 import Me from "./Me";
 import Experience from "./Experience";
 import Education from "./Education";
+import "./App.css";
 
 const App = () => {
   let labels = [
