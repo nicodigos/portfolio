@@ -4,8 +4,7 @@ import ButtonsList from "./components/ButtonsList";
 import Introduction from "./components/Introduction";
 import Brand from "./components/Brand";
 import "./Home.css";
-import { useEffect, useState, ReactNode } from "react";
-import ImageDescription from "./components/ImageDescription";
+import { useEffect, useState } from "react";
 import QuoteSection from "./components/QuoteSection";
 
 type Props = {
@@ -13,26 +12,6 @@ type Props = {
 };
 
 function Home({ links }: Props) {
-  let imageDescriptionArray: ReactNode[] = [];
-  imageDescriptionArray.push(
-    <ImageDescription
-      image={"/public/images/eye.svg"}
-      title={"Data Visualization"}
-      description={"This is an awsome description"}
-    ></ImageDescription>,
-    <ImageDescription
-      image={"/public/images/app-store.svg"}
-      title={"Data Visualization"}
-      description={"This is an awsome description"}
-      reversed={true}
-    ></ImageDescription>,
-    <ImageDescription
-      image={"/public/images/pipe.svg"}
-      title={"Outside the box"}
-      description={"This is an awsome description"}
-    ></ImageDescription>
-  );
-
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -70,7 +49,7 @@ function Home({ links }: Props) {
         }
       ></Banner>
       <QuoteSection></QuoteSection>
-      <Introduction children={imageDescriptionArray}></Introduction>
+      <Introduction></Introduction>
       <Brand></Brand>
     </>
   );
