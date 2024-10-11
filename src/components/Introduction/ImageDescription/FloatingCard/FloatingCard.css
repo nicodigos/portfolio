@@ -1,0 +1,44 @@
+.floating-card-invisible {
+  display: none;
+}
+
+.card-title {
+  clear: both;
+}
+
+.card-description {
+  margin-top: 20px;
+}
+
+.floating-card-visible {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  padding: 30px;
+  background-color: var(--background-color-white);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  border-radius: 10px;
+}
+
+.card-background-invisible {
+  display: none;
+}
+
+.card-background-visible {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 500;
+}
+
+.closing-x {
+  color: var(--grey);
+  float: right;
+  cursor: pointer;
+}

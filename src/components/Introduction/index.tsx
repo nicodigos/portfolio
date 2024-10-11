@@ -8,13 +8,14 @@ function Introduction() {
     <ImageDescription
       image={"/public/images/rocket.svg"}
       title={"Value Creation"}
-      description={"This is an awsome description"}
+      description={
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean rutrum velit nunc, et porta dui pellentesque vel. Sed consequat vehicula maximus. Cras vehicula massa auctor, elementum urna in, laoreet nisi. Phasellus consectetur sem vel eros efficitur, id ornare massa ultrices. Aliquam erat volutpat"
+      }
     ></ImageDescription>,
     <ImageDescription
       image={"/public/images/analysis.svg"}
       title={"Visualization"}
       description={"This is an awsome description"}
-      reversed={true}
     ></ImageDescription>,
     <ImageDescription
       image={"/public/images/api.svg"}
@@ -37,11 +38,17 @@ function Introduction() {
       description={"This is an awsome description"}
     ></ImageDescription>
   );
-  const [windowHeight, setWindowHeight] = useState(window.innerHeight);
+  const [windowSize, setWindowSize] = useState({
+    height: window.innerHeight,
+    width: window.innerWidth,
+  });
 
   // Función para actualizar el tamaño de la ventana
   const handleResize = () => {
-    setWindowHeight(window.innerHeight);
+    setWindowSize({
+      height: window.innerHeight,
+      width: window.innerWidth,
+    });
   };
 
   useEffect(() => {
@@ -52,15 +59,23 @@ function Introduction() {
     };
   }, []);
 
+  let smallScreen = false;
+
+  if (windowSize.width < 1024) {
+    smallScreen = true;
+  }
+
   return (
     <section
       className="introduction inria-sans-regular"
       style={{
-        height: `${
-          windowHeight / window.screen.height > 0.8
-            ? "100vh"
-            : (window.screen.height * 0.8).toString() + "px"
-        }`,
+        height: smallScreen
+          ? "auto"
+          : `${
+              windowSize.height / window.screen.height > 0.8
+                ? "100vh"
+                : (window.screen.height * 0.8).toString() + "px"
+            }`,
       }}
     >
       <div className="inner-introduction-container">
