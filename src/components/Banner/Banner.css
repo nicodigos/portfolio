@@ -12,11 +12,12 @@ em {
 }
 
 .banner-center {
+  display: flex;
   position: relative;
   overflow: hidden;
-  height: 300px;
+  height: auto;
   /* padding: 80px 100px; */
-  background-color: transparent;
+  /* background-color: blue; */
   /* border-radius: 70px; */
 }
 
@@ -67,14 +68,27 @@ em {
 }
 
 @media (max-width: 767px) {
-  .banner {
-    background-color: #05071b;
-    /* background-image: none; */
-  }
-
   .banner-quote {
     font-size: 30px;
-    letter-spacing: -2.5px;
+    letter-spacing: -0.5px;
     word-spacing: 0.5px;
+  }
+
+  .job-titles {
+    margin-top: 30px;
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 357px) {
+  .banner-quote {
+    font-size: 25px;
+    letter-spacing: -0.5px;
+    word-spacing: 0.5px;
+  }
+
+  .job-titles {
+    margin-top: 30px;
+    font-size: 17px;
   }
 }

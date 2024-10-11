@@ -35,9 +35,8 @@ function Banner({ children }: Props) {
       >
         <div className="banner-center">
           <div className="content">
-            <h1 className="banner-quote">
-              There are not impossible destinations,
-            </h1>
+            <h1 className="banner-quote">There are not</h1>
+            <h1 className="banner-quote">impossible destinations,</h1>
             <h1 className="banner-quote">just untraveled journeys</h1>
             <p className="inria-sans-light job-titles">
               Business Intelligence | Fullstack Developer
