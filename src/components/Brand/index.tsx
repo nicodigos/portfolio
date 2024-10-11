@@ -3,11 +3,17 @@ import BrandBox from "./BrandBox";
 import "./Brand.css";
 
 function Brand() {
-  const [windowHeight, setWindowHeight] = useState(window.innerHeight);
+  const [windowSize, setWindowSize] = useState({
+    height: window.innerHeight,
+    width: window.innerWidth,
+  });
 
   // Función para actualizar el tamaño de la ventana
   const handleResize = () => {
-    setWindowHeight(window.innerHeight);
+    setWindowSize({
+      height: window.innerHeight,
+      width: window.innerWidth,
+    });
   };
 
   useEffect(() => {
@@ -17,6 +23,12 @@ function Brand() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  let smallScreen = false;
+
+  if (windowSize.width < 1024) {
+    smallScreen = true;
+  }
 
   const brandsListName: string[] = [
     "directv.png",
@@ -42,11 +54,13 @@ function Brand() {
     <section
       className="brand-section inria-sans-light"
       style={{
-        height: `${
-          windowHeight / window.screen.height > 0.8
-            ? "100vh"
-            : (window.screen.height * 0.8).toString() + "px"
-        }`,
+        height: smallScreen
+          ? "auto"
+          : `${
+              windowSize.height / window.screen.height > 0.8
+                ? "100vh"
+                : (window.screen.height * 0.8).toString() + "px"
+            }`,
       }}
     >
       <p className="brand-title">Some of my clients</p>

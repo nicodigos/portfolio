@@ -8,3 +8,12 @@
 /* .transparency {
   opacity: 0.3;
 } */
+
+@media (max-width: 767px) {
+  .brand-logo {
+    /* filter: grayscale(100%); */
+    width: 70px;
+    margin: 10px 15px;
+    /* opacity: 0.7; */
+  }
+}

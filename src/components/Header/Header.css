@@ -16,14 +16,6 @@ nav.scrolled {
   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); */
 }
 
-/* .home-icon {
-  font-size: 30px;
-  align-items: center;
-  color: white;
-  transition: color 0.3s ease;
-  cursor: pointer;
-} */
-
 .home {
   padding-left: 7.5%;
 }
@@ -35,4 +27,41 @@ nav.scrolled {
 .logo-link {
   text-decoration: none;
   color: var(--text-color);
+}
+
+.no-desktop-view {
+  display: none;
+}
+
+.hamburguer-options {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+  clear: both;
+}
+
+.hamburguer-options p {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  nav {
+    height: 60px;
+  }
+
+  .desktop-view {
+    display: none;
+  }
+
+  .no-desktop-view {
+    display: block;
+  }
+
+  .hamburger-menu {
+    font-size: 30px;
+    margin-right: 50px;
+    cursor: pointer;
+  }
 }

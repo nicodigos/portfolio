@@ -1,6 +1,5 @@
 .brand-section {
   /* color: #040424; */
-  height: 100vh;
   /* color: gray; */
   display: flex;
   justify-content: center;
@@ -26,4 +25,10 @@
 .brand-title {
   margin-bottom: 30px;
   font-size: 20px;
+}
+
+@media (max-width: 1023px) {
+  .brand-section-logos {
+    width: auto;
+  }
 }

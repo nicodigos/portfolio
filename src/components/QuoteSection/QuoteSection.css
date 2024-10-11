@@ -15,3 +15,17 @@
 .heart {
   color: var(--red);
 }
+
+@media (max-width: 1023px) {
+  .quote {
+    font-size: 30px;
+  }
+
+  .heart {
+    font-size: 30px;
+  }
+
+  .quote-section {
+    height: 70px;
+  }
+}

@@ -4,12 +4,13 @@
   transition: color 0.2s ease;
 }
 
-.alata-regular {
-  font-family: "Alata", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
 .name-logo:hover {
   color: var(--red);
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .name-logo {
+    font-size: 25px;
+    letter-spacing: -0.2px;
+  }
 }

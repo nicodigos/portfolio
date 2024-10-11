@@ -1,5 +1,5 @@
 import { useState } from "react";
-import FloatingCard from "./FloatingCard";
+import FloatingCard from "../../FloatingCard";
 import "./ImageDescription.css";
 
 type Props = {
