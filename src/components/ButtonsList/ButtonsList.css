@@ -1,4 +1,4 @@
-ul li {
+.unordered-list li {
   display: inline-block;
   margin: 10px;
   padding: 10px 12px;
@@ -36,7 +36,7 @@ ul li {
   background-color: transparent;
 }
 
-ul li:hover {
+.unordered-list li:hover {
   background-color: var(--yellow);
   color: var(--text-color);
 }

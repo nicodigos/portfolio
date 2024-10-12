@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import ButtonsList from "./components/ButtonsList";
 import SectionTitle from "./components/SectionTitle";
 import SectionContent from "./components/SectionContent";
+import Footer from "./components/Footer/Footer";
 
 type Props = {
   links: string[][];
@@ -24,6 +25,7 @@ function Me({ links }: Props) {
       <SectionContent
         contentJsonUrl={"/section-contents/about-me.json"}
       ></SectionContent>
+      <Footer></Footer>
     </>
   );
 }

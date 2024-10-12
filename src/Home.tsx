@@ -6,6 +6,7 @@ import Brand from "./components/Brand";
 import "./Home.css";
 import { useEffect, useState } from "react";
 import QuoteSection from "./components/QuoteSection";
+import Footer from "./components/Footer/Footer";
 
 type Props = {
   links: string[][];
@@ -51,6 +52,7 @@ function Home({ links }: Props) {
       <QuoteSection></QuoteSection>
       <Introduction></Introduction>
       <Brand></Brand>
+      <Footer></Footer>
     </>
   );
 }

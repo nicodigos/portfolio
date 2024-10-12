@@ -17,7 +17,9 @@ function ButtonsList({ labels, style, hover_style }: Props) {
       </Link>
     );
   }
-  return <ul className={`${style} ${hover_style}`}>{buttons_list}</ul>;
+  return (
+    <ul className={`unordered-list ${style} ${hover_style}`}>{buttons_list}</ul>
+  );
 }
 
 export default ButtonsList;
