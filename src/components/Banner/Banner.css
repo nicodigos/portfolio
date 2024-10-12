@@ -5,6 +5,8 @@
   flex-direction: column;
   display: flex;
   background-size: cover;
+  min-width: 310px;
+  min-height: 400px;
 }
 
 em {
@@ -38,6 +40,7 @@ em {
 .job-titles {
   margin-top: 30px;
   font-size: 23px;
+  text-align: center;
 }
 
 #button-panel {

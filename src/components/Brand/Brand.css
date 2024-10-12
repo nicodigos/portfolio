@@ -7,6 +7,7 @@
   flex-direction: column;
   padding: 100px 40px;
   z-index: 100;
+  min-width: 310px;
 }
 .brand-section-logos {
   width: 900px;
@@ -14,12 +15,6 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-}
-
-.inria-sans-light {
-  font-family: "Inria Sans", sans-serif;
-  font-weight: 300;
-  font-style: normal;
 }
 
 .brand-title {
@@ -30,5 +25,10 @@
 @media (max-width: 1023px) {
   .brand-section-logos {
     width: auto;
+  }
+
+  .brand-title {
+    margin-bottom: 30px;
+    font-size: 17px;
   }
 }

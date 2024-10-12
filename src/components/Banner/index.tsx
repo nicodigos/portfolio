@@ -6,11 +6,17 @@ type Props = {
 };
 
 function Banner({ children }: Props) {
-  const [windowHeight, setWindowHeight] = useState(window.innerHeight);
+  const [windowSize, setWindowSize] = useState({
+    height: window.innerHeight,
+    width: window.innerWidth,
+  });
 
   // Función para actualizar el tamaño de la ventana
   const handleResize = () => {
-    setWindowHeight(window.innerHeight);
+    setWindowSize({
+      height: window.innerHeight,
+      width: window.innerWidth,
+    });
   };
 
   useEffect(() => {
@@ -21,13 +27,24 @@ function Banner({ children }: Props) {
     };
   }, []);
 
+  let smallScreen = false;
+  let ultraSmallScreen = false;
+
+  if (windowSize.width < 564) {
+    smallScreen = true;
+  }
+
+  if (windowSize.width < 357) {
+    ultraSmallScreen = true;
+  }
+
   return (
     <>
       <div
         className="banner inria-sans-regular"
         style={{
           height: `${
-            windowHeight / window.screen.height > 0.8
+            windowSize.height / window.screen.height > 0.8
               ? "100vh"
               : (window.screen.height * 0.8).toString() + "px"
           }`,
@@ -35,12 +52,32 @@ function Banner({ children }: Props) {
       >
         <div className="banner-center">
           <div className="content">
-            <h1 className="banner-quote">There are not</h1>
-            <h1 className="banner-quote">impossible destinations,</h1>
-            <h1 className="banner-quote">just untraveled journeys</h1>
-            <p className="inria-sans-light job-titles">
-              Business Intelligence | Fullstack Developer
-            </p>
+            {smallScreen ? (
+              <>
+                <h1 className="banner-quote">There are not</h1>
+                <h1 className="banner-quote">impossible destinations,</h1>
+                <h1 className="banner-quote">just untraveled journeys</h1>
+              </>
+            ) : (
+              <>
+                <h1 className="banner-quote">
+                  There are not impossible destinations,
+                </h1>
+                <h1 className="banner-quote">just untraveled journeys</h1>
+              </>
+            )}
+
+            {ultraSmallScreen ? (
+              <>
+                <p className="inria-sans-light job-titles">
+                  Business Intelligence <br></br> Fullstack Developer
+                </p>
+              </>
+            ) : (
+              <p className="inria-sans-light job-titles">
+                Business Intelligence | Fullstack Developer
+              </p>
+            )}
 
             <div id="button-panel">{children}</div>
           </div>

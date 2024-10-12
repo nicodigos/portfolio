@@ -1,11 +1,11 @@
 .introduction {
   background-color: var(--background-color-white);
-  height: 1000px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 70px;
+  min-width: 310px;
 }
 
 .inria-sans-regular {
