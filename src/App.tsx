@@ -4,14 +4,14 @@ import Me from "./Me";
 import Experience from "./Experience";
 import Education from "./Education";
 import "./App.css";
+import Dashboard from "./components/Dashboard/Dashboard";
 
 const App = () => {
   let labels = [
     ["About Me", "/me"],
     ["Experience", "/experience"],
     ["Education", "/education"],
-    ["Power BI", "/bi"],
-    ["D3.js", "/d3js"],
+    ["Dashboard", "/dash"],
   ];
   return (
     <Router>
@@ -20,6 +20,10 @@ const App = () => {
         <Route path="/me" element={<Me links={labels} />} />
         <Route path="/experience" element={<Experience links={labels} />} />
         <Route path="/education" element={<Education links={labels} />} />
+        <Route
+          path="/dash"
+          element={<Dashboard links={labels}></Dashboard>}
+        ></Route>
       </Routes>
     </Router>
   );
