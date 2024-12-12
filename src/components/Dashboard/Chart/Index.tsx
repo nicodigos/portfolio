@@ -45,7 +45,8 @@ function createApexChartElement(): JSX.Element {
         const valueX = w.globals.seriesX[seriesIndex][dataPointIndex];
         const formattedDate = valueX; // Ahora valueX es un string
 
-        let tooltipContent = `<div style="padding: 10px; font-size: 14px; font-family: 'Arial', sans-serif;"><strong>${formattedDate}</strong><br/>`;
+        let tooltipContent = `<div style="padding: 10px; font-size: 14px; font-family: 'Arial', sans-serif;"><strong>${formattedDate} </br> <p style="color:gray; padding-top:5px" >Category: value (growth, participation)</p> 
+        </strong><br/>`;
 
         // Calcular el total de todas las series en ese punto x
         let totalSum = 0;
