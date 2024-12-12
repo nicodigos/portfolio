@@ -45,7 +45,8 @@ function createApexChartElement(): JSX.Element {
         const valueX = w.globals.seriesX[seriesIndex][dataPointIndex];
         const formattedDate = valueX; // Ahora valueX es un string
 
-        let tooltipContent = `<div style="padding: 10px; font-size: 14px; font-family: 'Arial', sans-serif;"><strong>${formattedDate} </br> <p style="color:gray; padding-top:5px" >Category: value (growth, participation)</p> 
+        let tooltipContent = `<div style="padding: 10px; font-size: 14px; font-family: 'Arial', sans-serif;"><strong>${formattedDate} </br> 
+        <p style="color:gray; padding-top:5px" >Category: value (growth, participation)</p> 
         </strong><br/>`;
 
         // Calcular el total de todas las series en ese punto x
@@ -65,15 +66,24 @@ function createApexChartElement(): JSX.Element {
 
         // Invertir el orden de las series solo para el tooltip
         seriesData.reverse();
+        let counter = seriesData.length - 1;
 
         // Iteramos sobre las series invertidas y calculamos el porcentaje
         seriesData.forEach(({ name, valueY }, index) => {
           let growthStr = "N/A";
           if (dataPointIndex > 0) {
-            const currentValue = series[index][dataPointIndex] || 0;
-            const previousValue = series[index][dataPointIndex - 1] || 0;
+            const currentValue = series[counter][dataPointIndex] || 0;
+            const previousValue = series[counter][dataPointIndex - 1] || 0;
             const growth = (currentValue - previousValue) / previousValue;
             const growthPercentage = (growth * 100).toFixed(2);
+            console.log(
+              name,
+              valueY,
+              counter,
+              currentValue,
+              previousValue,
+              growthPercentage
+            );
 
             if (growth > 0) {
               growthStr = `<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="green">
@@ -82,8 +92,7 @@ function createApexChartElement(): JSX.Element {
             } else if (growth === 0) {
               growthStr = `<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <line x1="5" y1="10" x2="15" y2="10" stroke="gray" stroke-width="2" />
-            </svg>
-            ${growthPercentage}%`;
+            </svg>${growthPercentage}%`;
             } else {
               growthStr = `<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="red">
                             <path d="M10 15l-5-5h10z"/>
@@ -91,6 +100,7 @@ function createApexChartElement(): JSX.Element {
             }
           }
 
+          console.log(name);
           // Calcular el porcentaje del valorY sobre el total sumado de todas las series
           const percentage = totalSum > 0 ? (valueY / totalSum) * 100 : 0;
           tooltipContent += `<div><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background-color:${
@@ -98,6 +108,7 @@ function createApexChartElement(): JSX.Element {
           };margin-right:5px;"></span><b>${name}: </b>${valueY} (${growthStr}, ${percentage.toFixed(
             2
           )}%)</div>`;
+          counter -= 1;
         });
 
         // Calcular el crecimiento del total
@@ -138,10 +149,10 @@ function createApexChartElement(): JSX.Element {
       data: [
         { x: "2024-01-01", y: 30 },
         { x: "2024-01-02", y: 40 },
-        { x: "2024-01-03", y: 40 },
-        { x: "2024-01-04", y: 40 },
+        { x: "2024-01-03", y: 45 },
+        { x: "2024-01-04", y: 50 },
         { x: "2024-01-05", y: 40 },
-        { x: "2024-01-06", y: 40 },
+        { x: "2024-01-06", y: 47 },
       ],
     },
     {
@@ -159,11 +170,11 @@ function createApexChartElement(): JSX.Element {
     {
       name: "East",
       data: [
-        { x: "2024-01-01", y: 20 },
+        { x: "2024-01-01", y: 18 },
         { x: "2024-01-02", y: 25 },
-        { x: "2024-01-03", y: 30 },
+        { x: "2024-01-03", y: 47 },
         { x: "2024-01-04", y: 15 },
-        { x: "2024-01-05", y: 10 },
+        { x: "2024-01-05", y: 9 },
         { x: "2024-01-06", y: 5 },
       ],
     },
@@ -171,12 +182,12 @@ function createApexChartElement(): JSX.Element {
     {
       name: "West",
       data: [
-        { x: "2024-01-01", y: 20 },
+        { x: "2024-01-01", y: 25 },
         { x: "2024-01-02", y: 25 },
-        { x: "2024-01-03", y: 30 },
-        { x: "2024-01-04", y: 15 },
-        { x: "2024-01-05", y: 10 },
-        { x: "2024-01-06", y: 5 },
+        { x: "2024-01-03", y: 38 },
+        { x: "2024-01-04", y: 16 },
+        { x: "2024-01-05", y: 18 },
+        { x: "2024-01-06", y: 9 },
       ],
     },
   ];
