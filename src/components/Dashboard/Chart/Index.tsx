@@ -79,9 +79,10 @@ function createApexChartElement(): JSX.Element {
                             <path d="M10 7l5 5H5z"/>  
                           </svg>${growthPercentage}%`;
             } else if (growth === 0) {
-              growthStr = `<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="gray">
-                            <path d="M5 10h10"/>
-                          </svg>${growthPercentage}%`;
+              growthStr = `<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <line x1="5" y1="10" x2="15" y2="10" stroke="gray" stroke-width="2" />
+            </svg>
+            ${growthPercentage}%`;
             } else {
               growthStr = `<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="red">
                             <path d="M10 15l-5-5h10z"/>
