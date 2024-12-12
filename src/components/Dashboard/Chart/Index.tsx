@@ -34,6 +34,7 @@ function createApexChartElement(): JSX.Element {
     },
     xaxis: {
       type: "category",
+      tickPlacement: "between",
     },
     yaxis: {
       // stacked: true, // Asegúrate de que el apilado esté habilitado también en el eje Y
@@ -46,7 +47,7 @@ function createApexChartElement(): JSX.Element {
         const formattedDate = valueX; // Ahora valueX es un string
 
         let tooltipContent = `<div style="padding: 10px; font-size: 14px; font-family: 'Arial', sans-serif;"><strong>${formattedDate} </br> 
-        <p style="color:gray; padding-top:5px" >Category: value (growth, participation)</p> 
+        <p style="color:gray;font-weight: normal; padding-top:5px" >Category: value (growth, participation)</p> 
         </strong><br/>`;
 
         // Calcular el total de todas las series en ese punto x
@@ -76,14 +77,6 @@ function createApexChartElement(): JSX.Element {
             const previousValue = series[counter][dataPointIndex - 1] || 0;
             const growth = (currentValue - previousValue) / previousValue;
             const growthPercentage = (growth * 100).toFixed(2);
-            console.log(
-              name,
-              valueY,
-              counter,
-              currentValue,
-              previousValue,
-              growthPercentage
-            );
 
             if (growth > 0) {
               growthStr = `<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="green">
@@ -100,7 +93,6 @@ function createApexChartElement(): JSX.Element {
             }
           }
 
-          console.log(name);
           // Calcular el porcentaje del valorY sobre el total sumado de todas las series
           const percentage = totalSum > 0 ? (valueY / totalSum) * 100 : 0;
           tooltipContent += `<div><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background-color:${
