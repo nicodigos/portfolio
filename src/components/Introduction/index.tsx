@@ -6,40 +6,40 @@ function Introduction() {
   let imageDescriptionArray: ReactNode[] = [];
   imageDescriptionArray.push(
     <ImageDescription
-      image={"/public/images/rocket.svg"}
-      key={"/public/images/rocket.svg"}
+      image={"/react-portf/images/rocket.svg"}
+      key={"/react-portf/images/rocket.svg"}
       title={"Value Creation"}
       description={
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean rutrum velit nunc, et porta dui pellentesque vel. Sed consequat vehicula maximus. Cras vehicula massa auctor, elementum urna in, laoreet nisi. Phasellus consectetur sem vel eros efficitur, id ornare massa ultrices. Aliquam erat volutpat"
       }
     ></ImageDescription>,
     <ImageDescription
-      image={"/public/images/analysis.svg"}
-      key={"/public/images/analysis.svg"}
+      image={"/react-portf/images/analysis.svg"}
+      key={"/react-portf/images/analysis.svg"}
       title={"Visualization"}
       description={"This is an awsome description"}
     ></ImageDescription>,
     <ImageDescription
-      image={"/public/images/api.svg"}
-      key={"/public/images/api.svg"}
+      image={"/react-portf/images/api.svg"}
+      key={"/react-portf/images/api.svg"}
       title={"Data Engineering"}
       description={"This is an awsome description"}
     ></ImageDescription>,
     <ImageDescription
-      image={"/public/images/webdev.svg"}
-      key={"/public/images/webdev.svg"}
+      image={"/react-portf/images/webdev.svg"}
+      key={"/react-portf/images/webdev.svg"}
       title={"Web Development"}
       description={"This is an awsome description"}
     ></ImageDescription>,
     <ImageDescription
-      image={"/public/images/security.svg"}
-      key={"/public/images/security.svg"}
+      image={"/react-portf/images/security.svg"}
+      key={"/react-portf/images/security.svg"}
       title={"Data Security"}
       description={"This is an awsome description"}
     ></ImageDescription>,
     <ImageDescription
-      image={"/public/images/apple.svg"}
-      key={"/public/images/apple.svg"}
+      image={"/react-portf/images/apple.svg"}
+      key={"/react-portf/images/apple.svg"}
       title={"Outside the box"}
       description={"This is an awsome description"}
     ></ImageDescription>

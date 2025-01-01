@@ -4,5 +4,9 @@ import { createHtmlPlugin } from "vite-plugin-html";
 
 export default defineConfig({
   plugins: [react()],
-  base: "{react-portf}",
+  base: "/react-portf/",
+  build: {
+    outDir: "dist",
+    assetsDir: "",
+  },
 });

@@ -39,7 +39,10 @@ function index({ contentJsonUrl }: Props) {
         break;
       case "image-url":
         finalContent.push(
-          <img key={element.content} src={element.content}></img>
+          <img
+            key={element.content}
+            src={`/react-portf/${element.content}`}
+          ></img>
         );
         break;
       case "subtitle":
