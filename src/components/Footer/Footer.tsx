@@ -7,7 +7,7 @@ function Footer() {
     <footer>
       <p className="footer-text inria-sans-light">
         {" "}
-        Nicolás Peralta &copy; 2024
+        Nicolas Peralta &copy; 2025
       </p>
       <ul className="links-social-media">
         <li>
