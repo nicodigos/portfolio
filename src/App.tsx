@@ -11,7 +11,7 @@ const App = () => {
     ["About Me", "/me"],
     ["Experience", "/experience"],
     ["Education", "/education"],
-    ["Dashboard", "/dash"],
+    ["Dashboard", "https://nicodigos-dashboard.streamlit.app/"],
   ];
   return (
     <Router basename="/react-portf">

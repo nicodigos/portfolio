@@ -12,7 +12,14 @@ function ButtonsList({ labels, style, hover_style }: Props) {
 
   for (let l of labels) {
     buttons_list.push(
-      <Link key={`${l}`} to={l[1]}>
+      <Link
+        key={`${l}`}
+        to={
+          l[0] != "Dashboard"
+            ? l[1]
+            : "https://nicodigos-dashboard.streamlit.app/"
+        }
+      >
         <li>{l[0]}</li>
       </Link>
     );
