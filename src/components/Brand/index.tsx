@@ -44,7 +44,7 @@ function Brand() {
     brandsList.push(
       <BrandBox
         key={brand}
-        imageUrl={`/portfolio/images/${brand}`}
+        imageUrl={`/react-portf/images/${brand}`}
         transparency={brand == "disney.png" ? true : false}
       ></BrandBox>
     );

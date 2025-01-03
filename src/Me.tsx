@@ -23,7 +23,7 @@ function Me({ links }: Props) {
       ></Header>
       <SectionTitle text={"About Me"}></SectionTitle>
       <SectionContent
-        contentJsonUrl={"/portfolio/section-contents/about-me.json"}
+        contentJsonUrl={"/react-portf/section-contents/about-me.json"}
       ></SectionContent>
       <Footer></Footer>
     </>

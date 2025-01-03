@@ -4,7 +4,7 @@ import { createHtmlPlugin } from "vite-plugin-html";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/portfolio/",
+  base: "/react-portf/",
   build: {
     outDir: "dist",
     assetsDir: "",

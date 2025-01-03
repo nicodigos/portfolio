@@ -41,7 +41,7 @@ function index({ contentJsonUrl }: Props) {
         finalContent.push(
           <img
             key={element.content}
-            src={`/portfolio/${element.content}`}
+            src={`/react-portf/${element.content}`}
           ></img>
         );
         break;

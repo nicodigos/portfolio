@@ -14,7 +14,7 @@ const App = () => {
     ["Dashboard", "/dash"],
   ];
   return (
-    <Router basename="/portfolio">
+    <Router basename="/react-portf">
       <Routes>
         <Route path="/" element={<Home links={labels} />} />
         <Route path="/me" element={<Me links={labels} />} />
