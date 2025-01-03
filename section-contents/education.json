@@ -1,0 +1,60 @@
+{
+  "data": [
+    {
+      "type": "text",
+      "content": "This is the educational path I have followed throughout my career. One of the key features of my profile is its multidisciplinary nature."
+    },
+    {
+      "type": "subtitle",
+      "content": "Lambton College"
+    },
+    {
+      "type": "image-url",
+      "content": "images/lambton-college-location.jpg"
+    },
+    {
+      "type": "text",
+      "content": "I started working at the same university where I completed my bachelor’s degree. I was chosen to work as a young researcher due to my outstanding performance during my studies. Over two years, I developed the entire data infrastructure used by a large research group (composed of at least 40 undergraduate and graduate students, along with six senior researchers of the highest quality in the country) for a project aimed at measuring Thirlwall’s Law in Colombia and other aspects of international trade."
+    },
+
+    {
+      "type": "text",
+      "content": "I began this project as a recent graduate and took on a role that no one else on the team was capable of handling. From scratch, I had to build my foundation as a data analyst and engineer: capturing data sources, transforming them, deploying them on various platforms for users, analyzing them, and providing insights, among other tasks. It was a highly practical learning experience—I had to endure the worst ways of doing things to uncover the best and most efficient methods. By the end of the process, I had acquired the entire foundation of my professional career."
+    },
+    {
+      "type": "subtitle",
+      "content": "University of the Andes"
+    },
+    {
+      "type": "image-url",
+      "content": "images/uniandesLocation.avif"
+    },
+    {
+      "type": "text",
+      "content": "I started working at the same university where I completed my bachelor’s degree. I was chosen to work as a young researcher due to my outstanding performance during my studies. Over two years, I developed the entire data infrastructure used by a large research group (composed of at least 40 undergraduate and graduate students, along with six senior researchers of the highest quality in the country) for a project aimed at measuring Thirlwall’s Law in Colombia and other aspects of international trade."
+    },
+
+    {
+      "type": "text",
+      "content": "I began this project as a recent graduate and took on a role that no one else on the team was capable of handling. From scratch, I had to build my foundation as a data analyst and engineer: capturing data sources, transforming them, deploying them on various platforms for users, analyzing them, and providing insights, among other tasks. It was a highly practical learning experience—I had to endure the worst ways of doing things to uncover the best and most efficient methods. By the end of the process, I had acquired the entire foundation of my professional career."
+    },
+
+    {
+      "type": "subtitle",
+      "content": "Military University Nueva Granada"
+    },
+    {
+      "type": "image-url",
+      "content": "/images/umng.jpg"
+    },
+    {
+      "type": "text",
+      "content": "I started working at the same university where I completed my bachelor’s degree. I was chosen to work as a young researcher due to my outstanding performance during my studies. Over two years, I developed the entire data infrastructure used by a large research group (composed of at least 40 undergraduate and graduate students, along with six senior researchers of the highest quality in the country) for a project aimed at measuring Thirlwall’s Law in Colombia and other aspects of international trade."
+    },
+
+    {
+      "type": "text",
+      "content": "I began this project as a recent graduate and took on a role that no one else on the team was capable of handling. From scratch, I had to build my foundation as a data analyst and engineer: capturing data sources, transforming them, deploying them on various platforms for users, analyzing them, and providing insights, among other tasks. It was a highly practical learning experience—I had to endure the worst ways of doing things to uncover the best and most efficient methods. By the end of the process, I had acquired the entire foundation of my professional career."
+    }
+  ]
+}
