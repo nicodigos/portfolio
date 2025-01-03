@@ -10,38 +10,48 @@ function Introduction() {
       key={"/react-portf/images/rocket.svg"}
       title={"Value Creation"}
       description={
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean rutrum velit nunc, et porta dui pellentesque vel. Sed consequat vehicula maximus. Cras vehicula massa auctor, elementum urna in, laoreet nisi. Phasellus consectetur sem vel eros efficitur, id ornare massa ultrices. Aliquam erat volutpat"
+        "A business, company, or organization exists to create value that did not previously exist in the world. That’s why my professional focus is always on contributing to maximizing that value creation, ensuring my clients are at the forefront of success."
       }
     ></ImageDescription>,
     <ImageDescription
       image={"/react-portf/images/analysis.svg"}
       key={"/react-portf/images/analysis.svg"}
       title={"Visualization"}
-      description={"This is an awsome description"}
+      description={
+        "A significant part of our brain evolved to interpret the images around us and make decisions. Today's world runs on data, but only through effective visualizations can the best decisions be made."
+      }
     ></ImageDescription>,
     <ImageDescription
       image={"/react-portf/images/api.svg"}
       key={"/react-portf/images/api.svg"}
       title={"Data Engineering"}
-      description={"This is an awsome description"}
+      description={
+        "The best business ideas may fail to take off if they aren't backed by a reliable, robust, and efficient infrastructure. How you handle your data directly impacts the success of your decisions and predictions."
+      }
     ></ImageDescription>,
     <ImageDescription
       image={"/react-portf/images/webdev.svg"}
       key={"/react-portf/images/webdev.svg"}
       title={"Web Development"}
-      description={"This is an awsome description"}
+      description={
+        "Your digital assets range from your face in the modern world to the home of your business. That’s why it’s crucial to maintain a clean appearance, a clear message, ensure optimal performance, and showcase plenty of style 😉."
+      }
     ></ImageDescription>,
     <ImageDescription
       image={"/react-portf/images/security.svg"}
       key={"/react-portf/images/security.svg"}
       title={"Data Security"}
-      description={"This is an awsome description"}
+      description={
+        "If your data is your business's most valuable asset, you'll want to keep it secure, choose the best service providers, and follow the best practices. Trust me, and your data will be in good hands!"
+      }
     ></ImageDescription>,
     <ImageDescription
       image={"/react-portf/images/apple.svg"}
       key={"/react-portf/images/apple.svg"}
       title={"Outside the box"}
-      description={"This is an awsome description"}
+      description={
+        "It’s not just about finding creative solutions. Sometimes, rethinking problems in unique ways and being willing to shift our paradigms can lead to extraordinary results."
+      }
     ></ImageDescription>
   );
   const [windowSize, setWindowSize] = useState({

@@ -37,6 +37,10 @@ function Brand() {
     "warner.jpg",
     "rappi.png",
     "siigo.png",
+    "ifood.png",
+    "alfa.png",
+    "star.png",
+    "bavaria.png",
   ];
 
   const brandsList: ReactNode[] = [];

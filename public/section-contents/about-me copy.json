@@ -5,8 +5,12 @@
       "content": "Hello! I’m Nicolas, and I’m thrilled to have you visiting my page! Professionally, I focus on helping grow your business through data and web development, but beyond that, I’m someone with a variety of interests. I love to learn, and over time, I’ve done so in many ways: sometimes through structured learning, but also through brainstorming sessions without a specific order. I’ve learned by reading, but also by listening to others and experiencing life with them, always aiming to contribute something valuable. I’ve grown through both successes and mistakes, learning and refining along the way. Today, I’m proud to be the result of all my experiences and knowledge."
     },
     {
-      "type": "text",
-      "content": "However, if I were to tell you something concrete about who I am in the shortest way possible, I would say that one of the most important lessons I’ve learned in life is that we are all like universes where we occupy the central axis. We are always the protagonists of our own story, filled with unique aspects that can never be fully repeated or communicated. I am a part of your universe, where you are the hero, and you are also a part of my universe. That’s why I am someone who is constantly curious, deeply empathetic, and genuinely concerned for others. The greatest mystery of existence is likely communication, which is why it is so important to nurture it."
+      "type": "subtitle",
+      "content": "This is a subtitle"
+    },
+    {
+      "type": "image-url",
+      "content": "/images/lambton-college-location.jpg"
     }
   ]
 }
