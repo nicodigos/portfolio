@@ -1,6 +1,6 @@
 {
-  "name": "react-portf",
-  "homepage": "https://nicodigos.github.io/react-portf/",
+  "name": "portfolio",
+  "homepage": "https://nicodigos.github.io/portfolio/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
