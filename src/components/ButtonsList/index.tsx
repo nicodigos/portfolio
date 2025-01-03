@@ -15,7 +15,7 @@ function ButtonsList({ labels, style, hover_style }: Props) {
       <Link
         key={`${l}`}
         to={
-          l[0] != "Dashboard"
+          l[0] != "Dashboard" || window.innerWidth < 890
             ? l[1]
             : "https://nicodigos-dashboard.streamlit.app/"
         }

@@ -1,6 +1,9 @@
 import ButtonsList from "../ButtonsList";
+import Footer from "../Footer/Footer";
 import Header from "../Header";
-import Chart from "./Chart/Index";
+import Video from "../Video/Video";
+import "./Dashboard.css";
+// import Chart from "./Chart/Index";
 
 type Props = { links: string[][] };
 
@@ -17,7 +20,16 @@ function Dashboard({ links }: Props) {
         }
         scrolled={true}
       ></Header>
-      <Chart></Chart>
+      {/* <Chart></Chart> */}
+      <div className="dashboard-p inria-sans-regular">
+        <p>
+          This application is optimized for desktop use, however, it seems you
+          are trying to access it from a mobile device. Therefore, I'd prefer to
+          show you a demo of the application in the following video.
+        </p>
+      </div>
+      <Video></Video>
+      <Footer></Footer>
     </>
   );
 }
