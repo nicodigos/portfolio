@@ -9,6 +9,10 @@
       "content": "Lambton College"
     },
     {
+      "type": "description",
+      "content": "Full Stack Software Development - FSDS"
+    },
+    {
       "type": "image-url",
       "content": "images/lambton-college-location.jpg"
     },
@@ -22,6 +26,10 @@
       "content": "University of the Andes"
     },
     {
+      "type": "description",
+      "content": "Economics Specialist"
+    },
+    {
       "type": "image-url",
       "content": "images/uniandesLocation.avif"
     },
@@ -33,6 +41,10 @@
     {
       "type": "subtitle",
       "content": "Military University Nueva Granada"
+    },
+    {
+      "type": "description",
+      "content": "International Relations"
     },
     {
       "type": "image-url",
