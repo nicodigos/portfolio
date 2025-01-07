@@ -76,6 +76,7 @@ function Introduction() {
   }, []);
 
   let smallScreen = false;
+  let innerHeightAtLoad = window.innerHeight;
 
   if (windowSize.width < 1024) {
     smallScreen = true;
@@ -89,7 +90,7 @@ function Introduction() {
           ? "auto"
           : `${
               windowSize.height / window.screen.height > 0.8
-                ? "100vh"
+                ? innerHeightAtLoad
                 : (window.screen.height * 0.8).toString() + "px"
             }`,
       }}

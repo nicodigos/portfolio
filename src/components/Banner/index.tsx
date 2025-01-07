@@ -29,6 +29,7 @@ function Banner({ children }: Props) {
 
   let smallScreen = false;
   let ultraSmallScreen = false;
+  let innerHeightAtLoad = window.innerHeight;
 
   if (windowSize.width < 564) {
     smallScreen = true;
@@ -45,7 +46,7 @@ function Banner({ children }: Props) {
         style={{
           height: `${
             windowSize.height / window.screen.height > 0.8
-              ? "100vh"
+              ? innerHeightAtLoad
               : (window.screen.height * 0.8).toString() + "px"
           }`,
         }}
