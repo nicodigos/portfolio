@@ -27,6 +27,17 @@
   padding: 20px 0px;
 }
 
+.section-subtitle {
+  font-size: 40px;
+  letter-spacing: -1px;
+  padding: 20px 0px;
+}
+
+.section-description {
+  font-size: 20px;
+  padding: 0px 0px;
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
   .section-subtitle {
     font-size: 30px;

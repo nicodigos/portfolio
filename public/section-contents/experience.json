@@ -9,6 +9,10 @@
       "content": "El Rocket"
     },
     {
+      "type": "description",
+      "content": "Software Engineer"
+    },
+    {
       "type": "image-url",
       "content": "/images/rocket.jpg"
     },
@@ -22,6 +26,10 @@
       "content": "Siigo"
     },
     {
+      "type": "description",
+      "content": "Senior Business Analyst"
+    },
+    {
       "type": "image-url",
       "content": "/images/siigo.webp"
     },
@@ -32,7 +40,11 @@
 
     {
       "type": "subtitle",
-      "content": "Resolve Studio SAS"
+      "content": "Resolve Studio"
+    },
+    {
+      "type": "description",
+      "content": "Data Engineer"
     },
     {
       "type": "image-url",
@@ -45,7 +57,11 @@
 
     {
       "type": "subtitle",
-      "content": "Desarrollo y Tecnologias SAS"
+      "content": "Desarrollo y Tecnologias"
+    },
+    {
+      "type": "description",
+      "content": "Political Data Strategist"
     },
     {
       "type": "image-url",
@@ -59,6 +75,10 @@
     {
       "type": "subtitle",
       "content": "Military University Nueva Granada"
+    },
+    {
+      "type": "description",
+      "content": "Economic Data Research Analyst"
     },
     {
       "type": "image-url",

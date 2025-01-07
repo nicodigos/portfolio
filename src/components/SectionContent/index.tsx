@@ -55,6 +55,17 @@ function index({ contentJsonUrl }: Props) {
           </h2>
         );
         break;
+
+      case "description":
+        finalContent.push(
+          <h3
+            className="inria-sans-bold section-description"
+            key={element.content}
+          >
+            {element.content}
+          </h3>
+        );
+        break;
     }
   });
 
