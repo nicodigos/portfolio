@@ -25,7 +25,7 @@ function Brand() {
   }, []);
 
   let smallScreen = false;
-  let innerHeightAtLoad = window.innerHeight;
+  // let innerHeightAtLoad = window.innerHeight;
 
   if (windowSize.width < 1024) {
     smallScreen = true;
@@ -58,27 +58,15 @@ function Brand() {
   return (
     <section
       className="brand-section inria-sans-light"
-      style={
-        //   {
-        //   height: smallScreen
-        //     ? "auto"
-        //     : `${
-        //         windowSize.height / window.screen.height > 0.8
-        //           ? "100vh"
-        //           : (window.screen.height * 0.8).toString() + "px"
-        //       }`,
-        // }
-
-        {
-          height: smallScreen
-            ? "auto"
-            : `${
-                windowSize.height / window.screen.height > 0.8
-                  ? innerHeightAtLoad
-                  : (window.screen.height * 0.8).toString() + "px"
-              }`,
-        }
-      }
+      style={{
+        height: smallScreen
+          ? "auto"
+          : `${
+              windowSize.height / window.screen.height > 0.8
+                ? "100vh"
+                : (window.screen.height * 0.8).toString() + "px"
+            }`,
+      }}
     >
       <p className="brand-title">Some of my clients</p>
       <div className="brand-section-logos">{brandsList}</div>
