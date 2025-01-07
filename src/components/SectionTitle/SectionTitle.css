@@ -11,7 +11,6 @@
 
 .internal-title {
   min-width: 610px;
-  /* border: solid; */
   padding: 0px;
 }
 
@@ -22,6 +21,10 @@
 @media (min-width: 768px) and (max-width: 1023px) {
   .section-title {
     padding: 100px 12% 130px 12%;
+    display: block;
+  }
+  .internal-title {
+    min-width: auto;
   }
 }
 
@@ -29,9 +32,13 @@
   .section-title {
     padding: 80px 10% 0px 10%;
     height: 150px;
+    display: block;
   }
   .section-title-content {
     font-size: 50px;
     letter-spacing: -3px;
+  }
+  .internal-title {
+    min-width: auto;
   }
 }
