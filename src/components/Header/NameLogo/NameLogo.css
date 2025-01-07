@@ -12,5 +12,6 @@
   .name-logo {
     font-size: 25px;
     letter-spacing: -0.2px;
+    transition: none;
   }
 }

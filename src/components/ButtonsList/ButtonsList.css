@@ -40,3 +40,9 @@
   background-color: var(--yellow);
   color: var(--text-color);
 }
+
+@media (max-width: 768px) {
+  .unordered-list li {
+    transition: none;
+  }
+}

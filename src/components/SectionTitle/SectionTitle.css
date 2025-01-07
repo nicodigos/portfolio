@@ -4,8 +4,15 @@
   width: 100%;
   letter-spacing: -5px;
   align-items: center;
-  justify-content: center;
+  flex-direction: column;
   min-width: 310px;
+  display: flex;
+}
+
+.internal-title {
+  min-width: 610px;
+  /* border: solid; */
+  padding: 0px;
 }
 
 .section-title-content {

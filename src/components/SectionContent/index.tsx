@@ -58,7 +58,11 @@ function index({ contentJsonUrl }: Props) {
     }
   });
 
-  return <section className="section-content">{finalContent}</section>;
+  return (
+    <section className="section-content">
+      <div className="internal-content">{finalContent}</div>
+    </section>
+  );
 }
 
 export default index;
